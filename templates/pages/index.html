@@ -76,7 +76,6 @@
  </div>
 
 
-
    <!-- AboutUs -->
    <div class="container pt-3">
      <div class="row">
@@ -94,49 +93,26 @@
      </div>
    </div>
 
-
- 
-   <!-- Blog -->
-         <div class="container pt-3">
-                 <h1 class="hero-heading display-5">Our latest articles</h1>
-             <div id="hot-post" class="row hot-post">
-                 <div class="col-md-4 hot-post-right">
-                     <div class="post post-thumb">
-                         <a class="post-img" href=""><img src="{% static 'images/hot-post-1.jpg' %}" alt=""></a>
-                         <div class="post-body">
-                             <div class="post-category">
-                                 <a href="">Technology</a>
-                                 <p>20 August 2019</p>
-                             </div>
-                             <h3 class="post-title"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quia?</a></h3>
-                         </div>
-                     </div>
+    
+   <!-- blog -->
+    <div class="container pt-3">
+        <h1 class="hero-heading display-5">Our latest articles</h1>
+        <div id="hot-post" class="row hot-post">
+            {% for blog in blogs %}
+              <div class="col-md-4 hot-post-right">
+                 <div class="post post-thumb">
+                    <a class="post-img" href=""><img src="{% static 'images/hot-post-1.jpg' %}" alt=""></a>
+                    <div class="post-body">
+                        <div class="post-category">
+                            <a href="">Technology</a>
+                            <p>20 August 2019</p>
+                        </div>
+                        <h3 class="post-title"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quia?</a></h3>
+                    </div>
                  </div>
-                 <div class="col-md-4 hot-post-right">
-                         <div class="post post-thumb">
-                             <a class="post-img" href=""><img src="{% static 'images/hot-post-1.jpg' %}" alt=""></a>
-                             <div class="post-body">
-                                 <div class="post-category">
-                                     <a href="">Technology</a>
-                                     <p>20 August 2019</p>
-                                 </div>
-                                 <h3 class="post-title"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, facilis.</a></h3>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="col-md-4 hot-post-right">
-                             <div class="post post-thumb">
-                                 <a class="post-img" href=""><img src="{% static 'images/hot-post-1.jpg' %}" alt=""></a>
-                                 <div class="post-body">
-                                     <div class="post-category">
-                                         <a href="">Technology</a>
-                                         <p>20 August 2019</p>
-                                     </div>
-                                     <h3 class="post-title"><a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, ipsum.</a></h3>
-                                 </div>
-                             </div>
-                         </div>
-             </div>
-         </div>
+              </div>
+            {% endfor %}
+        </div>
+    </div>
 
-         {% endblock %}
+{% endblock %}
