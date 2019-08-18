@@ -98,6 +98,7 @@
     <div class="container pt-3">
         <h1 class="hero-heading display-5">Our latest articles</h1>
         <div id="hot-post" class="row hot-post">
+
             {% for blog in blogs %}
               <div class="col-md-4 hot-post-right">
                  <div class="post post-thumb">
@@ -105,13 +106,14 @@
                     <div class="post-body">
                         <div class="post-category">
                             <a href="">Technology</a>
-                            <p>20 August 2019</p>
+                            <p>{{blog.blog_date}}</p>
                         </div>
-                        <h3 class="post-title"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quia?</a></h3>
+                        <h3 class="post-title"><a href="">{{blog.blog_title}}</a></h3>
                     </div>
                  </div>
               </div>
             {% endfor %}
+
         </div>
     </div>
 
