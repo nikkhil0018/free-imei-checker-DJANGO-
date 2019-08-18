@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+
+     {% block content %}
+     <!-- Showcase -->
+       <section class="section-hero">
+        <div class="row text-center d-flex justify-content-center">
+          <div class="col-lg-6">
+            <h1 class="hero-heading display-5">Just Type In A IMEI To Get Started</h1>
+            <p class="lead font-weight-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, mollitia veritatis doloribus eius rerum aperiam.</p>
+            <!-- Subscription form -->
+           <div class="input-group mb-3">
+             <input type="text" class="form-control" placeholder="Dial *#06# to get your IMEI number" />
+             <div class="input-group-append">
+               <button class="btn btn-primary" onclick="checkTapped">Free IMEI Check</button>
+             </div>
+           </div>
+           <!-- App available on -->
+           <div class="platform d-none d-lg-block">
+             <span class="platform-title">App available on</span>
+             <ul class="platform-list list-inline">
+               <li class="list-inline-item">
+                 <img src="{% static 'images/android.svg' %}" class="platform-image" alt="img android"/>
+               </li>
+               <li class="list-inline-item">
+                 <img src="{% static 'images/apple.svg' %}" class="platform-image" alt="img ios"/>
+               </li>
+               <li class="list-inline-item">
+                 <img src="{% static 'images/windows.svg' %}" class="platform-image" alt="img windows"/>
+               </li>
+             </ul>
+           </div>
+
+          </div>
+        </div>
+   </section>
+
+
+      <!-- Feature Block -->
+ <div class="container py-3">
+   <div class="row d-flex justify-content-center">
+       <h1 class="hero-heading display-5">Things That Made Us The Best</h1>
+   </div>
+   <div class="row text-center">
+     <!-- col-one -->
+     <div class="col-lg-4">
+       <div class="feature-item mb-5 mb-lg-0">
+         <div class="gradient-icon gradient-feature">
+           <i class="fas fa-cog"></i>
+         </div>
+         <h3 class="h5">Machine Learning</h3>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi ducimus voluptatem voluptate provident esse!</p>
+       </div>
+     </div>
+     <!-- col-two -->
+     <div class="col-lg-4">
+      <div class="feature-item mb-5 mb-lg-0">
+        <div class="gradient-icon gradient-feature">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3 class="h5">Data science</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi ducimus voluptatem voluptate provident esse!</p>
+      </div>
+     </div>
+     <!-- col-three -->
+     <div class="col-lg-4">
+      <div class="feature-item mb-5 mb-lg-0">
+        <div class="gradient-icon gradient-feature">
+          <i class="fas fa-user-cog"></i>
+        </div>
+        <h3 class="h5">Atificial intelligence</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nisi ducimus voluptatem voluptate provident esse!</p>
+      </div>
+     </div>
+   </div>
+ </div>
+
+
+
+   <!-- AboutUs -->
+   <div class="container pt-3">
+     <div class="row">
+       <div class="col-lg-4">
+         <img src="{% static 'images/about_us.svg' %}" alt="" width="100%">
+       </div>
+       <div class="col-lg-8">
+           <h1 class="hero-heading display-5">About Us</h1>
+         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci obcaecati placeat, nam quas inventore quaerat, assumenda unde explicabo vero, nobis perferendis beatae voluptate. Quo perspiciatis omnis porro eaque! Laborum, assumenda.</p>
+         <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolorem aliquam sunt dolore quia adipisci consequatur voluptatem quis itaque. Aperiam?</p>
+         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto excepturi maiores earum temporibus impedit nihil
+           <a href=""> Read more...</a>
+         </p>
+       </div>
+     </div>
+   </div>
+
+
+ 
+   <!-- Blog -->
+         <div class="container pt-3">
+                 <h1 class="hero-heading display-5">Our latest articles</h1>
+             <div id="hot-post" class="row hot-post">
+                 <div class="col-md-4 hot-post-right">
+                     <div class="post post-thumb">
+                         <a class="post-img" href=""><img src="{% static 'images/hot-post-1.jpg' %}" alt=""></a>
+                         <div class="post-body">
+                             <div class="post-category">
+                                 <a href="">Technology</a>
+                                 <p>20 August 2019</p>
+                             </div>
+                             <h3 class="post-title"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quia?</a></h3>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-md-4 hot-post-right">
+                         <div class="post post-thumb">
+                             <a class="post-img" href=""><img src="{% static 'images/hot-post-1.jpg' %}" alt=""></a>
+                             <div class="post-body">
+                                 <div class="post-category">
+                                     <a href="">Technology</a>
+                                     <p>20 August 2019</p>
+                                 </div>
+                                 <h3 class="post-title"><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, facilis.</a></h3>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-md-4 hot-post-right">
+                             <div class="post post-thumb">
+                                 <a class="post-img" href=""><img src="{% static 'images/hot-post-1.jpg' %}" alt=""></a>
+                                 <div class="post-body">
+                                     <div class="post-category">
+                                         <a href="">Technology</a>
+                                         <p>20 August 2019</p>
+                                     </div>
+                                     <h3 class="post-title"><a href="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, ipsum.</a></h3>
+                                 </div>
+                             </div>
+                         </div>
+             </div>
+         </div>
+
+         {% endblock %}
